@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFFAA"
+    tools:context="com.dangerindexapp.team9.project_3_team_9.SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="32dp">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:id="@+id/settingsTitle"
+                android:layout_centerHorizontal="true"
+                android:textSize="36dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable GPS"
+                android:id="@+id/gpsCheckBox"
+                android:longClickable="false"
+                android:checked="false"
+                android:onClick="ClickGPSEnable"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Data Logging"
+                android:id="@+id/loggingCheckBox"
+                android:longClickable="false"
+                android:checked="false"
+                android:onClick="ClickLoggingEnable"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear data log and settings"
+                android:textSize="12sp"
+                android:onClick="ClearLog"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:id="@+id/button"
+                android:onClick="InfoButton"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

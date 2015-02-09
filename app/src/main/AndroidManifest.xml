@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dangerindexapp.team9.project_3_team_9" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.dangerindexapp.team9.project_3_team_9.MainMenu"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dangerindexapp.team9.project_3_team_9.Settings"
+            android:label="@string/title_activity_settings"
+            >
+        </activity>
+
+        <activity
+            android:name="com.dangerindexapp.team9.project_3_team_9.MyGraph"
+            android:label="@string/app_name"
+            android:parentActivityName = "com.dangerindexapp.team9.project_3_team_9.MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dangerindexapp.team9.project_3_team_9.MainMenu" />
+        </activity>
+
+        <activity
+            android:name="com.dangerindexapp.team9.project_3_team_9.InfoActivity"
+            android:label="@string/app_name"
+            android:parentActivityName = "com.dangerindexapp.team9.project_3_team_9.MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dangerindexapp.team9.project_3_team_9.MainMenu" />
+        </activity>
+
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+</manifest>

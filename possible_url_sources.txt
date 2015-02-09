@@ -1,0 +1,7 @@
+This is an example call to the weather.gov url:
+
+http://graphical.weather.gov/xml/SOAP_server/ndfdXMLclient.php?whichClient=NDFDgen&lat=38.99&lon=-77.01&product=time-series&begin=2004-01-01T00%3A00%3A00&end=2018-11-30T00%3A00%3A00
+
+example of airnowapi.org:
+
+http://www.airnowapi.org/aq/observation/latLong/current/?format=application/xml&latitude=30.6014&longitude=-96.3144&distance=1000&API_KEY=7CBA9082-79C6-4C11-B7E8-DA8EB71D9606

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="UserData">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="EnableGPS" type="xs:string"/>
+                <xs:element name="EnableLogging" type="xs:string"/>
+                <xs:element name="LastLocalPull" type="xs:string"/>
+                <xs:element name="RecordsData">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="value" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

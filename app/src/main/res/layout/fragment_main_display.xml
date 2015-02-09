@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCC88"
+    android:focusableInTouchMode="true"
+    tools:context="com.dangerindexapp.team9.project_3_team_9.MainDisplayFragment"
+    android:id="@+id/relativeLayout">
+    <!-- TODO: Update blank fragment layout -->
+    <requestFocus/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter a location!"
+        android:id="@+id/enterPrompt"
+        android:layout_centerHorizontal="true"
+        android:textSize="36dp"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/curLocButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/curLocButton"
+        android:layout_below="@id/enterPrompt"
+        android:drawableLeft="@drawable/ic_pinpoint"
+        android:onClick="LoadCoords"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/locationBox"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/curLocButton"
+        android:layout_below="@id/enterPrompt"
+        android:layout_margin="12dp"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:onClick="CalculateClick"
+        android:id="@+id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/locationBox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:text="Danger Index:"
+        android:id="@+id/dangerIndexText"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="48dp" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/dangerIndexText"
+    android:text="-.--"
+    android:id="@+id/dangerIndexValue"
+    android:layout_marginTop="8dp"
+    android:layout_centerHorizontal="true"
+    android:textSize="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dangerIndexValue"
+        android:text="Click calculate!"
+        android:id="@+id/dangerIndexMessage"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="28dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dangerIndexMessage"
+        android:text="Records"
+        android:onClick="RecordsButton"
+        android:id="@+id/recordsButton"
+        android:layout_marginBottom="12dp"
+        android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
